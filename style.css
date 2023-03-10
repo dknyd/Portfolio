@@ -1,0 +1,223 @@
+/* ALL VIEW */
+body{
+    min-height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+    background: url("assets/background_main OLD.jpg") no-repeat;
+    background-size: cover;
+}
+
+.navbar-nav{
+    margin-left: auto;
+    margin-top: 1rem;
+    padding-right: 2rem;
+}
+
+.navbar-brand{
+    color:blanchedalmond;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.navbar-brand:hover{
+    color:burlywood
+}
+
+.nav-link{
+    color:blanchedalmond;
+    
+}
+
+.nav-link:hover{
+    color:burlywood
+}
+
+.navbar-toggler-icon {
+    background-color: blanchedalmond;
+}
+/* NAVBAR FLOW IN */
+.navbar {
+    opacity: 0;
+    transition: opacity 6s ease-in-out;
+    visibility: hidden;
+  }
+/* HEADER FLOW IN */
+.header {
+    position: relative;
+    left: -100%; /* Off the screen to the left */
+    /* or */
+    right: -100%; /* Off the screen to the right */
+    /* Other styles from previous example */
+  }
+
+  @keyframes slideInFromLeft {
+    0% {
+      left: -100%; /* Start off the screen to the left */
+    }
+    100% {
+      left: 0; /* End at its final position */
+    }
+  }
+  
+  .header {
+    /* Other styles from previous example */
+    animation: slideInFromLeft 1s forwards; /* Apply the animation to the header */
+    animation-delay: 3s;
+  }
+
+
+  
+  
+
+.header{
+    color:blanchedalmond;
+    /* background: url("assets/space\ background.jpg") no-repeat; */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introContainer{
+    text-align: center;
+    text-transform: uppercase;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+
+.featuresContainer{
+    color:blanchedalmond;
+}
+
+#fixedBackground{
+	background: url(assets/background_fixed.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+    color:blanchedalmond;
+    height: 10rem;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFixedBackgroundAbout{
+    margin-top: 3rem !important;
+}
+
+.containerFixedBackgroundProjects{
+    margin-bottom: 1rem !important;
+    margin-top: 3rem !important;
+}
+
+
+/* IMAGE GALLERY */
+#gallery .col-md-3{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.imageContainer{
+	position: relative;
+	cursor: pointer;
+    margin-top: 2rem;
+	
+}
+
+.imgOverlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(26,0,26) !important;
+	opacity: 0;
+    background-size: cover;
+}
+
+.imageContainer:hover .imgOverlay{
+	opacity: .5;
+}
+
+.imgText{
+	position: absolute;
+	color: white;
+}
+
+/* ABOUT */
+.aboutText{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 20%;
+    font-size: 1.5rem;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+/* FOOTER (CONTACT) */
+#footer{
+	width: 100%;
+	color: blanchedalmond;
+	margin-top: 20rem;
+}
+
+#footer.container{
+	margin: auto;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social{
+	margin: 20px 0;
+}
+
+.social a{
+	color: white;
+	margin-right: 25px;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.content h2{
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	
+}
+
+#footer.container .content{
+	padding: 10px 20px;
+	color:white;
+}
+
+.second{
+	margin-left: 180px;
+}
+
+.iconFrontEndMentor{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.iconGithub{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+input, textarea{
+    border-radius: 0.5rem;
+}
+
+.btnSend{
+    margin-right: 4rem;
+    border-radius: 0.5rem;;
+}
+/* MOBILE VIEW */
+
+/* DESKTOP VIEW */
